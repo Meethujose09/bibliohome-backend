@@ -7,11 +7,11 @@ Installation
 Clone the repository:
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
-git clone https://github.com/your-username/bookstore-backend.git
+git clone https://github.com/Meethujose09/bibliohome-backend.git
 Install dependencies:
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
-cd bookstore-backend
+
 npm install
 Set up environment variables:Create a .env file in the root directory and define the following variables:
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -23,28 +23,22 @@ Start the server:
 
 npm start
 API Endpoints
-Books
-View All Books
+ View All Books
 URL: /api/books
 Method: GET
 Description: Retrieves all books from the database.
-Response:
-json
-
+Response: json
 [
   {
     "Title": "Book Title 1",
     "Author": "Author Name 1",
     "ISBN": "number",
-
   },
   {
     "Title": "Book Title 1",
     "Author": "Author Name 1",
     "ISBN": "number",
-
   },
-
 ]
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -52,9 +46,7 @@ Add a New Book
 URL: /api/books
 Method: POST
 Description: Adds a new book to the database.
-Request Body:
-json
-
+Request Body: json
 {
     "Title": "Book Title 1",
     "Author": "Author Name 1",
@@ -67,9 +59,7 @@ Method: GET
 Description: Searches for books by title.
 Parameters:
 id: Search keyword
-Response:
-json
-
+Response: json
 [
   {
     "Title": "Book Title 1",
@@ -78,14 +68,12 @@ json
   }
 ]
 -------------------------------------------------------------------------------------------------------------------------------------------------
-Wishlists
-Create a Wishlist
+Readlist
+Create a readlist
 URL: /api/wishlists
 Method: POST
 Description: Creates a new wishlist.
-Request Body:
-json
-
+Request Body: json
 {
   "bookId": "606bd24efdc0493d04ae136e",
 "status":'status of the book'
@@ -95,15 +83,13 @@ Get All Wishlists
 URL: /api/wishlists
 Method: GET
 Description: Retrieves all wishlists with book details.
-Response:
-json
+Response: json
 
 [
   {
     "_id": "607123456789012345678901",
     "status":'In Progress'
     "bookId": {
-      
     "Title": "Book Title 1",
     "Author": "Author Name 1",
     "ISBN": "number",
@@ -112,14 +98,13 @@ json
   
 ]
 -------------------------------------------------------------------------------------------------------------------------------------------------
-View a Specific Wishlist
+View a Specific readlist
 URL: /api/wishlists/:id
 Method: GET
 Description: Retrieves a specific wishlist by ID with book details.
 Parameters:
 id: Wishlist ID
-Response:
-json
+Response: json
 
 {
    {
@@ -134,21 +119,19 @@ json
   },
 }
 -------------------------------------------------------------------------------------------------------------------------------------------------
-Update a Wishlist
+Update a Readlist
 URL: /api/wishlists/:id
 Method: PUT
 Description: Updates a specific wishlist by ID.
 Parameters:
 id: Wishlist ID
-Request Body:
-json
+Request Body: json
 
 {
   "bookId": "606bd24efdc0493d04ae136e",
       "status":'In Progress'
 }
-Response:
-json
+Response: json
   "  {
     "_id": "607123456789012345678901",
     "status":'In Progress'
@@ -160,17 +143,15 @@ json
       }
   },
   -------------------------------------------------------------------------------------------------------------------------------------------------
-Delete a Wishlist
+Delete a from readlist
 URL: /api/wishlists/:id
 Method: DELETE
 Description: Deletes a specific wishlist by ID.
 Parameters:
 id: Wishlist ID
-Response:
-json
-
+Response: json
 {
   "message": "Wishlist deleted successfully"
 }
-Contributors
-meethujose09@gmail.com
+
+
