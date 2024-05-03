@@ -32,7 +32,7 @@ const startServer = async () => {
       "mongodb+srv://meethuJose09:Nkm28lk7Xn8Ze8HV@bibliohome.omomurn.mongodb.net/?retryWrites=true&w=majority&appName=biblioHome"
       
     );
-    app.listen(8090, () => console.log("Server started on port 8090"));
+    app.listen(8050, () => console.log("Server started on port 8050"));
   } catch (error) {
     console.error(error);
     process.exit(1);
