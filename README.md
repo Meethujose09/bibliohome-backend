@@ -4,6 +4,7 @@ BIBLIOHOME BACKEND USING NODEJS
 Welcome to BIBLIOHOME
 This is a backend application built using Node.js and Express.js framework. It connects to a MongoDB database to manage books and wishlists.
 this application is used to manage and maintain the reading book list. it is built by the inspiration of the BOSMO application
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Functionality.
 ================
@@ -14,20 +15,24 @@ ReadList: from the booklist, the user can add the books to his read list. From t
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 Installation
+----------------
 Clone the repository:
--------------------------------------------------------------------------------------------------------------------------------------------------
 
 git clone https://github.com/Meethujose09/bibliohome-backend.git
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
 Install dependencies:
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 npm install
 Set up environment variables:Create a .env file in the root directory and define the following variables:
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 PORT=8000
 MONGODB_URI= mongodb+srv://meethuJose09:Nkm28lk7Xn8Ze8HV@bibliohome.omomurn.mongodb.net/?retryWrites=true&w=majority
 Start the server: npm start
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 Continues Integration and Continuous Deployment (CI/CD)
 ======================================================
@@ -38,6 +43,7 @@ in here both vercel and Github are connected and deployment will be automated.
 once we commit the code into github it will automatically build and release  to vercel and it will affect our app. 
 
 APP LINK: https://bibliohome-backend.vercel.app/
+
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 API Endpoints
@@ -45,6 +51,7 @@ API Endpoints
 APP LINK: https://bibliohome-backend.vercel.app/
 all the API endpoint need to connect with this app link:
 eg:https://bibliohome-backend.vercel.app/api/books    this is used to get all the books.
+
 ----------------
 View All Books
 -------------
